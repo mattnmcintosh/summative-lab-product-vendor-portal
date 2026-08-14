@@ -1,0 +1,61 @@
+/* Base navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary, #1e293b);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* NavLink base styles */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #94a3b8; /* Muted text */
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state */
+.navbar a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Active NavLink state (automatically added by react-router-dom) */
+.navbar a.active {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
+}
+
+/* Active indicator accent line at the bottom of the active tab */
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: var(--accent, #d97706); /* Uses your door vendor theme accent */
+  border-radius: 2px;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+  .navbar {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
