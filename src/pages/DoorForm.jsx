@@ -47,7 +47,7 @@ function DoorForm() {
         <input name="height" type="number" placeholder="Height" onChange={handleChange} required />
         <input name="width" type="number" placeholder="Width" onChange={handleChange} required />
         <input name="price" type="number" step="0.01" placeholder="Price" onChange={handleChange} required />
-        <button type="submit" disabled={isSubmitting}>
+        <button type="submit" class="btn-primary" disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add Door"}
         </button>
       </form>

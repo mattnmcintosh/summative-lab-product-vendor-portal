@@ -5,6 +5,7 @@ import DoorContainer from "./pages/DoorContainer";
 import DoorCard from "./pages/DoorCard";
 import AdminPortal from "./pages/AdminPortal";
 import DoorForm from "./pages/DoorForm";
+import DoorEditForm from "./pages/DoorEditForm";
 import DoorList from "./pages/DoorList";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="" element={<DoorList />}>
             <Route path=":id" element={<DoorCard />} />
           </Route>
+          <Route path=":id/edit" element={<DoorEditForm />} />
         </Route>
         <Route path="/admin" element={<AdminPortal />}>
           <Route path="" element={<DoorForm />} />

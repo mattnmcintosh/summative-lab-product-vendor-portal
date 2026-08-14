@@ -239,14 +239,6 @@
       "width": 42,
       "manufacturer": "Simpson Door Company",
       "price": 1650
-    },
-    {
-      "material": "Cork board",
-      "manufacturer": "McIntosh's",
-      "height": 80,
-      "width": 34,
-      "price": 19.99,
-      "id": "kuPAdyRLk3c"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

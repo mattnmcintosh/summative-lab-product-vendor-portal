@@ -6,7 +6,7 @@
 
     function DoorContainer() {
 
-        const { doors, isLoading, error } = useDoors();
+        const { doors, isLoading, error, addDoorToList, updateDoorInList, removeDoorFromList } = useDoors();
         const [query, setQuery] = useState("");
 
         const filteredDoors = doors.filter((door) => {
@@ -23,9 +23,7 @@
             <>
             <NavBar />
             <main>
-                <h1>Here is our current inventory</h1>
-                <Search query={query} onSearchChange={setQuery}/>
-                <Outlet context={{doors: filteredDoors }} />
+                <Outlet context={{ doors: filteredDoors, query, setQuery, addDoorToList, updateDoorInList, removeDoorFromList }} />
             </main>
             </>
         )
