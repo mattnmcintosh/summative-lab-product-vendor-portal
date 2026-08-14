@@ -50,10 +50,9 @@ function DoorForm() {
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add Door"}
         </button>
-        <button type="button" onClick={() => navigate("/store")}>
-        Cancel
-        </button>
       </form>
     </div>
   );
 }
+
+export default DoorForm;

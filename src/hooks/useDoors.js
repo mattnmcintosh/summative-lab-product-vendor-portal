@@ -23,10 +23,5 @@ export function useDoors() {
       });
   }, []);
 
-  // Helper function to append a new door locally after POST
-  const addDoorToList = (newDoor) => {
-    setDoors((prev) => [...prev, newDoor]);
-  };
-
   return { doors, isLoading, error };
 }
