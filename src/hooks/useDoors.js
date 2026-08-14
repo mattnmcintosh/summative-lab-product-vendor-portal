@@ -3,11 +3,9 @@ import { useState, useEffect } from "react";
 export function useDoors() {
   
   const [doors, setDoors] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setIsLoading(true);
     fetch("http://localhost:4000/doors")
       .then((r) => {
         if (!r.ok) throw new Error("Failed to fetch doors.");
@@ -15,11 +13,9 @@ export function useDoors() {
       })
       .then((data) => {
         setDoors(data);
-        setIsLoading(false);
       })
       .catch((err) => {
         setError(err.message);
-        setIsLoading(false);
       });
   }, []);
 
@@ -37,5 +33,5 @@ export function useDoors() {
     setDoors((prev) => prev.filter((door) => door.id !== id));
   };
 
-  return { doors, isLoading, error, addDoorToList, updateDoorInList, removeDoorFromList };
+  return { doors, error, addDoorToList, updateDoorInList, removeDoorFromList };
 }
