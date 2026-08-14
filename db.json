@@ -1,244 +1,253 @@
 {
   "doors": [
     {
-      "id": 1,
+      "id": "1",
       "material": "Solid Oak",
       "height": 80,
       "width": 36,
       "manufacturer": "JELD-WEN",
-      "price": 450.00
+      "price": 450
     },
     {
-      "id": 2,
+      "id": "2",
       "material": "Hollow Core Composite",
       "height": 80,
       "width": 32,
       "manufacturer": "Masonite",
-      "price": 85.00
+      "price": 85
     },
     {
-      "id": 3,
+      "id": "3",
       "material": "Fiberglass",
       "height": 84,
       "width": 36,
       "manufacturer": "Therma-Tru",
-      "price": 620.00
+      "price": 620
     },
     {
-      "id": 4,
+      "id": "4",
       "material": "Steel",
       "height": 80,
       "width": 36,
       "manufacturer": "Ceco Door",
-      "price": 310.00
+      "price": 310
     },
     {
-      "id": 5,
+      "id": "5",
       "material": "Pine",
       "height": 80,
       "width": 30,
       "manufacturer": "JELD-WEN",
-      "price": 175.00
+      "price": 175
     },
     {
-      "id": 6,
+      "id": "6",
       "material": "Mahogany",
       "height": 96,
       "width": 36,
       "manufacturer": "Simpson Door Company",
-      "price": 1250.00
+      "price": 1250
     },
     {
-      "id": 7,
+      "id": "7",
       "material": "Aluminum Framed Glass",
       "height": 84,
       "width": 36,
       "manufacturer": "Kawneer",
-      "price": 890.00
+      "price": 890
     },
     {
-      "id": 8,
+      "id": "8",
       "material": "Solid Core MDF",
       "height": 80,
       "width": 32,
       "manufacturer": "Masonite",
-      "price": 160.00
+      "price": 160
     },
     {
-      "id": 9,
+      "id": "9",
       "material": "Knotty Alder",
       "height": 80,
       "width": 36,
       "manufacturer": "JELD-WEN",
-      "price": 540.00
+      "price": 540
     },
     {
-      "id": 10,
+      "id": "10",
       "material": "Steel",
       "height": 84,
       "width": 40,
       "manufacturer": "Curries",
-      "price": 380.00
+      "price": 380
     },
     {
-      "id": 11,
+      "id": "11",
       "material": "Walnut",
       "height": 96,
       "width": 42,
       "manufacturer": "Simpson Door Company",
-      "price": 1400.00
+      "price": 1400
     },
     {
-      "id": 12,
+      "id": "12",
       "material": "Fiberglass",
       "height": 80,
       "width": 36,
       "manufacturer": "Pella",
-      "price": 580.00
+      "price": 580
     },
     {
-      "id": 13,
+      "id": "13",
       "material": "Hollow Core Composite",
       "height": 80,
       "width": 28,
       "manufacturer": "Masonite",
-      "price": 75.00
+      "price": 75
     },
     {
-      "id": 14,
+      "id": "14",
       "material": "Solid Cherry",
       "height": 84,
       "width": 36,
       "manufacturer": "Simpson Door Company",
-      "price": 980.00
+      "price": 980
     },
     {
-      "id": 15,
+      "id": "15",
       "material": "Stainless Steel",
       "height": 80,
       "width": 36,
       "manufacturer": "Ceco Door",
-      "price": 720.00
+      "price": 720
     },
     {
-      "id": 16,
+      "id": "16",
       "material": "Fiberglass",
       "height": 80,
       "width": 32,
       "manufacturer": "Therma-Tru",
-      "price": 510.00
+      "price": 510
     },
     {
-      "id": 17,
+      "id": "17",
       "material": "Maple",
       "height": 80,
       "width": 30,
       "manufacturer": "JELD-WEN",
-      "price": 390.00
+      "price": 390
     },
     {
-      "id": 18,
+      "id": "18",
       "material": "Tempered Glass",
       "height": 84,
       "width": 36,
       "manufacturer": "CR Laurence",
-      "price": 750.00
+      "price": 750
     },
     {
-      "id": 19,
+      "id": "19",
       "material": "Solid Core Birch",
       "height": 80,
       "width": 32,
       "manufacturer": "Masonite",
-      "price": 195.00
+      "price": 195
     },
     {
-      "id": 20,
+      "id": "20",
       "material": "Steel",
       "height": 80,
       "width": 36,
       "manufacturer": "Curries",
-      "price": 325.00
+      "price": 325
     },
     {
-      "id": 21,
+      "id": "21",
       "material": "Douglas Fir",
       "height": 84,
       "width": 36,
       "manufacturer": "Simpson Door Company",
-      "price": 680.00
+      "price": 680
     },
     {
-      "id": 22,
+      "id": "22",
       "material": "Fiberglass",
       "height": 96,
       "width": 36,
       "manufacturer": "Pella",
-      "price": 790.00
+      "price": 790
     },
     {
-      "id": 23,
+      "id": "23",
       "material": "Solid Oak",
       "height": 80,
       "width": 34,
       "manufacturer": "JELD-WEN",
-      "price": 430.00
+      "price": 430
     },
     {
-      "id": 24,
+      "id": "24",
       "material": "Hollow Core Composite",
       "height": 80,
       "width": 24,
       "manufacturer": "Masonite",
-      "price": 65.00
+      "price": 65
     },
     {
-      "id": 25,
+      "id": "25",
       "material": "Aluminum Framed Glass",
       "height": 96,
       "width": 36,
       "manufacturer": "Kawneer",
-      "price": 1100.00
+      "price": 1100
     },
     {
-      "id": 26,
+      "id": "26",
       "material": "Steel",
       "height": 84,
       "width": 36,
       "manufacturer": "Ceco Door",
-      "price": 350.00
+      "price": 350
     },
     {
-      "id": 27,
+      "id": "27",
       "material": "Bamboo",
       "height": 80,
       "width": 32,
       "manufacturer": "Andersen Windows & Doors",
-      "price": 490.00
+      "price": 490
     },
     {
-      "id": 28,
+      "id": "28",
       "material": "Fiberglass",
       "height": 80,
       "width": 36,
       "manufacturer": "Therma-Tru",
-      "price": 560.00
+      "price": 560
     },
     {
-      "id": 29,
+      "id": "29",
       "material": "Solid Core MDF",
       "height": 80,
       "width": 30,
       "manufacturer": "JELD-WEN",
-      "price": 150.00
+      "price": 150
     },
     {
-      "id": 30,
+      "id": "30",
       "material": "Teak",
       "height": 96,
       "width": 42,
       "manufacturer": "Simpson Door Company",
-      "price": 1650.00
+      "price": 1650
+    },
+    {
+      "material": "Cork board",
+      "manufacturer": "McIntosh's",
+      "height": 80,
+      "width": 34,
+      "price": 19.99,
+      "id": "kuPAdyRLk3c"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
