@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useAddDoor } from "../hooks/useAddDoor";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 
 function DoorForm() {
 
   const navigate = useNavigate();
+  const context = useOutletContext();
+  const addDoorToList = context?.addDoorToList;
 
   const { addDoor, isSubmitting, error } = useAddDoor();
   const [formData, setFormData] = useState({
@@ -30,7 +32,8 @@ function DoorForm() {
         price: Number(formData.price),
       };
       
-      await addDoor(formattedData);
+      const newDoor = await addDoor(formattedData);
+      if (addDoorToList) addDoorToList(newDoor);
       navigate("/store");
     } catch (err) {
       console.error(err);
@@ -47,7 +50,7 @@ function DoorForm() {
         <input name="height" type="number" placeholder="Height" onChange={handleChange} required />
         <input name="width" type="number" placeholder="Width" onChange={handleChange} required />
         <input name="price" type="number" step="0.01" placeholder="Price" onChange={handleChange} required />
-        <button type="submit" class="btn-primary" disabled={isSubmitting}>
+        <button type="submit" className="btn-primary" disabled={isSubmitting}>
           {isSubmitting ? "Adding..." : "Add Door"}
         </button>
       </form>

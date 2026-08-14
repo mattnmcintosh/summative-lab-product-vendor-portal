@@ -1,7 +1,6 @@
     import NavBar from "../components/NavBar";
-    import Search from "../components/Search";
     import { Outlet } from 'react-router-dom';
-    import { useEffect, useState } from 'react';
+    import { useState } from 'react';
     import { useDoors } from "../hooks/useDoors";
 
     function DoorContainer() {
