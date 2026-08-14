@@ -5,6 +5,7 @@ import DoorContainer from "./pages/DoorContainer";
 import DoorCard from "./pages/DoorCard";
 import AdminPortal from "./pages/AdminPortal";
 import DoorForm from "./pages/DoorForm";
+import DoorList from "./pages/DoorList";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -15,10 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<DoorContainer />}>
-          <Route path=":id" element={<DoorCard />} />
+          <Route path="" element={<DoorList />}>
+            <Route path=":id" element={<DoorCard />} />
+          </Route>
         </Route>
         <Route path="/admin" element={<AdminPortal />}>
-          <Route path="new" element={<DoorForm />} />
+          <Route path="" element={<DoorForm />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
