@@ -15,10 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<DoorContainer />}>
-          <Route path="/:id" element={<DoorCard />} />
+          <Route path=":id" element={<DoorCard />} />
         </Route>
         <Route path="/admin" element={<AdminPortal />}>
-          <Route path="/new" element={<DoorForm />} />
+          <Route path="new" element={<DoorForm />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
