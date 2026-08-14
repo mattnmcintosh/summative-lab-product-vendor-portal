@@ -23,5 +23,19 @@ export function useDoors() {
       });
   }, []);
 
-  return { doors, isLoading, error };
+  const addDoorToList = (newDoor) => {
+    setDoors((prev) => [...prev, newDoor]);
+  };
+
+  const updateDoorInList = (updatedDoor) => {
+    setDoors((prev) =>
+      prev.map((door) => (door.id === updatedDoor.id ? updatedDoor : door))
+    );
+  };
+
+  const removeDoorFromList = (id) => {
+    setDoors((prev) => prev.filter((door) => door.id !== id));
+  };
+
+  return { doors, isLoading, error, addDoorToList, updateDoorInList, removeDoorFromList };
 }
