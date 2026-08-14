@@ -1,9 +1,6 @@
-function DoorCard() {
+function DoorCard({ door }) {
 
-    //include door data when ready
-    const door = {};
-
-    if (!door) return <h2>Door not found.</h2>
+    if (!door) return <h2>Loading or door not found.</h2>
 
     return (
         <div className="card">
